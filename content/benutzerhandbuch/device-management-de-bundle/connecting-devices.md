@@ -53,14 +53,7 @@ Je nach Gerätetyp sind möglicherweise nicht alle beschriebenen Schritte releva
 {{< /c8y-admon-info >}}
 
 1. Klicken Sie auf **Registrierung** im Menü **Geräte** des Navigators.
-2. Klicken Sie auf der Seite **Geräteregistrierung** rechts in der oberen Leiste auf **Gerät registrieren** und wählen Sie aus dem Auswahlmenü die Option **Einzelregistrierung** > **Generell**.
-
-![Bulk registration](/images/benutzerhandbuch/DeviceManagement/devmgmt-dropdown-menu.png)
-
-Der Dialog **Geräte registrieren** wird angezeigt.
-
-  <img src="/images/benutzerhandbuch/DeviceManagement/devmgmt-registration-general.png" alt="General device registration" style="max-width: 100%">
-
+2. Klicken Sie auf der Seite **Geräteregistrierung** rechts in der oberen Leiste auf **Gerät registrieren** und wählen Sie aus dem Auswahlmenü die Option **Einzelregistrierung** > **Generell**. Der Dialog **Geräte registrieren** wird angezeigt.
 3. Geben Sie im Feld **Geräte-ID** die eindeutige ID des Geräts ein. Diese finden Sie in der Gerätedokumentation. Bei mobilen Geräten handelt es sich dabei meistens um die IMEI (International Mobile Equipment Identity), die häufig auf der Rückseite des Geräts zu finden ist.
 4. Wählen Sie optional eine Gruppe aus, der Sie das Gerät nach der Registrierung zuweisen möchten, siehe auch [Gruppieren von Geräten](#grouping-devices).
 5. Klicken Sie auf **Neues Gerät hinzufügen**, um ein weiteres Gerät zu registrieren. Geben Sie auch hier die Geräte-ID ein und weisen Sie optional das Gerät einer Gruppe zu. Auf diese Weise können Sie mehrere Geräte in einem Schritt registrieren.
@@ -176,14 +169,7 @@ Es gibt keine Einschränkung hinsichtlich der Anzahl der Geräte, die durch eine
 
 2. Klicken Sie auf der Seite **Geräteregistrierung** rechts in der oberen Leiste auf **Gerät registrieren** und wählen Sie aus dem Auswahlmenü die Option **Bulk-Registrierung** > **Generell**.
 
-![Bulk registration](/images/benutzerhandbuch/DeviceManagement/devmgmt-dropdown-menu.png)
-
-3. Klicken Sie auf die Plus-Schaltfläche, um die hochzuladende CSV-Datei auszuwählen, oder wählen Sie sie durch Ziehen und Ablegen aus.
-
-  <img src="/images/benutzerhandbuch/DeviceManagement/devmgmt-bulk-registration.png" alt="Bulk registration" style="max-width: 100%">
-
-<br>
-Je nach Format der hochgeladenen CSV-Datei wird einer der folgenden Registrierungstypen verarbeitet:
+3. Klicken Sie auf die Plus-Schaltfläche, um die hochzuladende CSV-Datei auszuwählen, oder wählen Sie sie durch Ziehen und Ablegen aus. Je nach Format der hochgeladenen CSV-Datei wird einer der folgenden Registrierungstypen verarbeitet:
 
 * Einfache Registrierung
 * Vollständige Registrierung
@@ -191,6 +177,8 @@ Je nach Format der hochgeladenen CSV-Datei wird einer der folgenden Registrierun
 {{< c8y-admon-info >}}
 Durch Mehrfachregistrierung wird eine elementare Darstellung des Geräts erstellt. Danach muss das Gerät sie auf eine volle Darstellung mit eigenem Status aktualisieren.
 {{< /c8y-admon-info >}}
+
+Aus der CSV-Datei wird automatisch ein Trennzeichen bezogen. Gültige Werte für Trennzeichen sind: `\t` (Tabulatorzeichen), `;` (Semikolon) und `,` (Komma).
 
 **Einfache Registrierung**
 
