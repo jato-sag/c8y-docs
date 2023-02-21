@@ -227,7 +227,7 @@ monitor RecognizeActivities {
         // Ignore first 5 records and then starting checking the outputs for 200 responses.
         // First 5 records need to be cached by Zementis Server. Hence send it out but ignore the incoming response.
         if(counter >= 5 and statusCode = 200) {
-	        string currentActivity := apiResponse.payload.getSequence("outputs")[0].getEntry("predicted_activity").valueToString();
+	        string currentActivity := apiResponse.payload.getSequence("outputs")[0].getEntry("predicted_label").valueToString();
 	        log "Last activity was : " + lastActivity + ", Current activity is : " + currentActivity + ", Reference activity is : "+ referenceActivity;
 
 	        if (currentActivity =  referenceActivity) {
